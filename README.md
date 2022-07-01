@@ -1,2 +1,3 @@
-# dcpr
-dcpr / decipher - hackthebox.eu
+# dcpr / decipher - academy.hackthebox.com
+
+https://academy.hackthebox.com/
