@@ -3,7 +3,7 @@
 # Accept all outgoning traffic.
 #
 resource "linode_firewall" "firewall" {
-  label = "htb"
+  label = "dcpr"
 
   inbound {
     label    = "allow-ssh"

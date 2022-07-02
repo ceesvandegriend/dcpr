@@ -21,3 +21,7 @@ variable "linode_authorized_key" {
   nullable = false
   default  = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPvNnUk4qfyrulUyB5e2U2NSBKD/DR1NILlfD5a3X2tq cees@griend.eu"
 }
+
+variable "linode_tags" {
+  default = [ "dcpr" ]
+}
