@@ -1,0 +1,9 @@
+---
+- name: sudo | /etc/sudoers.d/adm
+  template:
+    src: sudo/sudo_adm.j2
+    dest: /etc/sudoers.d/adm
+    owner: root
+    group: root
+    mode: '0660'
+  
