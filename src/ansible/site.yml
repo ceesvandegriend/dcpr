@@ -16,8 +16,8 @@
   # Main
   roles:
     - server
-  #   - desktop
-
+    - users
+  
   # Clean/Purge repository
   post_tasks:
     - name: post-tasks | cleanup package cache

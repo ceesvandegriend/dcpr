@@ -1,0 +1,23 @@
+---
+- name: create group
+  group:
+    name: "{{ dcpr_user }}"
+    state: present
+
+- name: create user
+  user:
+    name: "{{ dcpr_user }}"
+    group: "{{ dcpr_user }}"
+    groups:
+      - adm
+      - ssh
+    append: true
+    state: present
+    comment: "{{ dcpr_comment }}"
+    shell: /usr/bin/zsh
+
+- name: authorized key
+  authorized_key:
+    user: "{{ dcpr_user }}"
+    key: "{{ dcpr_ssh_key}}"
+    state: present

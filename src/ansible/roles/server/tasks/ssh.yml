@@ -4,18 +4,6 @@
     name: ssh
     state: present
 
-- name: ssh | whoami
-  command: whoami
-  become: false
-  changed_when: false
-  register: whoami
-
-- name: "ssh | group add user {{ whoami.stdout }}"
-  user: 
-    name: "{{ whoami.stdout }}"
-    groups: ssh
-    append: yes
-
 - name: ssh | /etc/ssh/sshd_config
   template:
     src: ssh/sshd_config.j2

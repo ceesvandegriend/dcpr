@@ -2,8 +2,4 @@
 dcpr_user: cees
 dcpr_comment: Cees van de Griend
 dcpr_email: cees@griend.eu
-dcpr_ssh_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPvNnUk4qfyrulUyB5e2U2NSBKD/DR1NILlfD5a3X2tq cees@griend.eu
-dcpr_gpg_key: 0AEFA422AC6CAA356728A4988C793245B8F69731
-
-dcpr_locale: en_US.UTF-8
-
+dcpr_ssh_key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPvNnUk4qfyrulUyB5e2U2NSBKD/DR1NILlfD5a3X2tq cees@griend.eu"
