@@ -1,0 +1,9 @@
+---
+- name: locale | set
+  locale_gen:
+    name: en_US.UTF-8
+    state: present
+
+- name: locale | set default
+  command: localectl set-locale en_US.UTF-8
+  when: ansible_env['LANG'] != "en_US.UTF-8"

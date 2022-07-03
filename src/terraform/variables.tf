@@ -1,3 +1,9 @@
+variable "linode_domain" {
+  type     = string
+  nullable = false
+  default  = "griend.dev"
+}
+
 variable "linode_image" {
   type     = string
   nullable = false
@@ -23,5 +29,5 @@ variable "linode_authorized_key" {
 }
 
 variable "linode_tags" {
-  default = [ "dcpr" ]
+  default = ["dcpr"]
 }

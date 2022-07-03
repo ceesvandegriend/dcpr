@@ -1,3 +1,6 @@
+#
+# Don't use a remote store for such a simple project
+#
 terraform {
   required_providers {
     linode = {
@@ -7,6 +10,8 @@ terraform {
   }
 }
 
+#
 # Linode token must be stored in environment variable LINODE_TOKEN
+#
 provider "linode" {
 }

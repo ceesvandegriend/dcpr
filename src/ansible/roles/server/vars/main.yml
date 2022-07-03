@@ -1,0 +1,15 @@
+---
+dcpr_packages_remove:
+  - firewalld
+  - python3-firewall
+
+
+dcpr_packages_install:
+  - apt-transport-https
+  - curl
+  - git
+  - gnupg2
+  - htop
+  - iotop
+  - tmux
+  - vim-nox

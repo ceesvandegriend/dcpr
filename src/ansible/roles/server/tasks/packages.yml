@@ -1,0 +1,10 @@
+---
+- name: packages | remove
+  apt:
+    name: "{{ dcpr_packages_remove }}"
+    state: absent
+
+- name: packages | install
+  apt:
+    name: "{{ dcpr_packages_install }}"
+    install_recommends: yes
